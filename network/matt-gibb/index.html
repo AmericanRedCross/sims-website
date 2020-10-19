@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="The website for Surge Information Management Support (SIMS).">
+
+    <title>Matt Gibb</title>
+
+
+    <link href="/assets/styles/vendor.min.css" rel="stylesheet">
+    <link href="/assets/styles/custom.css" rel="stylesheet">
+    
+    
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+              <a id="menu-toggle-sidebar" href="#" class="btn btn-secondary"><i class="fa fa-times"></i></a>
+                <li class="sidebar-brand">
+                    <a href="/">SIMS</a>
+                </li>
+                <li>
+                    <a href="/resources">Resources</a>
+                </li>
+                <li>
+                    <a href="/toolkit">Toolkit</a>
+                </li>
+                <li>
+                    <a href="/dashboard">Dashboard</a>
+                </li>
+                <li>
+                    <a href="/network">Network</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <!--  keep all page content within the #page-content-wrapper -->
+        <div id="page-content-wrapper"> 
+            
+              <a href="#menu-toggle" class="btn btn-secondary" id="menu-toggle"><i class="fa fa-bars"></i></a>
+              
+              <div class="container" style="padding-top:72px;">
+  <div class="row justify-content-center">
+    <div class="col-10">
+      <h2>Who is Matthew Gibb?</h2>
+      <h4>GIS Officer, American Red Cross</h4>
+      <p> <p>Matt supports the American Red Cross long term recovery programs in Haiti, Nepal, and the Philippines. He also works on building better valdiation processses within the Humanitarian OpenStreetMap community. He joined the American Red Cross in October 2015 and prior to that, he worked as a GIS Specialist with the Federal Emergency Management Agency, responding to disasters domestically in the US and the Caribbean. In his time with the American Red Cross, he has remotely supported disasters in Ecuador, Haiti, and Sierra Leone, and has deployed to Bangladesh for flooding in 2017. He’s doing is best to teach his kids to read maps, and he’s hoping his son’s first words will be Buckminster Fuller, but will settle for Dymaxion Projection.</p>
+ </p>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row justify-content-center">
+  <div class="col-10 text-center">
+    <a class="btn btn-dark" href="/network" role="button">Back to network</a>
+  </div>
+</div>
+
+<!-- Bootstrap core JavaScript -->
+<script src="/assets/scripts/jquery.min.js"></script>
+<script src="/assets/scripts/bootstrap.bundle.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+$("#menu-toggle-sidebar").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+});
+
+// Scrolls to the selected menu item on the page
+$(function () {
+    $('a[href*=\\#]:not([href=\\#])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+});
+</script>
+              
+
+        </div> <!-- /#page-content-wrapper -->
+
+    </div> <!-- /#wrapper -->
+
+    
+    
+
+
+</body>
+
+</html>
